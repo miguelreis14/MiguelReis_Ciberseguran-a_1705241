@@ -1,7 +1,7 @@
 # A test object
 import pickle
 
-f = open("./files/demo2.txt", "r",encoding='utf8')
+f = open("./files/demo1.txt", "r",encoding='utf8')
 x=f.read()
 
 # Serialization
