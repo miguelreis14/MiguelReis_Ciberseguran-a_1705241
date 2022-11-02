@@ -19,6 +19,14 @@ with SimpleXMLRPCServer(('localhost', 8000),
         return x + y
     server.register_function(adder_function, 'add')
 
+    def subtrair(x,y):
+        return x- y
+    server.register_function(subtrair, 'sub')
+
+    def polinomio(x):
+        return 2*x+3
+    server.register_function(polinomio, 'poli')
+
     # Register an instance; all the methods of the instance are
     # published as XML-RPC methods (in this case, just 'mul').
     class MyFuncs:
