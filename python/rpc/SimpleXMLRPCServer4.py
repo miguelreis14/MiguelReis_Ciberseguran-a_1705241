@@ -13,9 +13,14 @@ with SimpleXMLRPCServer(('localhost', 8000),
 
 
     # Register a function under a different name
-    def complicated(a1, a2,b1,b2):
-        
-    server.register_function(complicated, 'comp')
+    def zeta(x):
+        i = 1
+        total = 0
+        while i <= x:
+            total = total + ((1/i) ** 8)
+            i = i + 1
+        return total
+    server.register_function(zeta, 'zeta')
 
 
 
