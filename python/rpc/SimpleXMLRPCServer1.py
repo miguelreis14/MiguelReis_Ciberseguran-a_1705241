@@ -28,7 +28,11 @@ with SimpleXMLRPCServer(('localhost', 8000),
     server.register_function(multiplicar, 'multi')
 
     def dividir(x,y):
-        return x/ y
+        if (y == 0):
+            return "ERROR"
+        else:
+            return x / y
+
     server.register_function(dividir, 'div')
 
 

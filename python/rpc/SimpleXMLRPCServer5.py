@@ -13,16 +13,14 @@ with SimpleXMLRPCServer(('localhost', 8000),
 
 
     # Register a function under a different name
-    def zeta(x,y):
-        i = 1
-        total = 0
-        while i <= x:
-            total = total + (1/ (i ** y))
-            i = i + 1
-        return total
-    server.register_function(zeta, 'zeta')
+    def supercomplex(a1,b1,a2,b2,test,teste2):
+        o = complex(test)
+        p = complex(teste2)
+
+        return str (o+p)
 
 
+    server.register_function(supercomplex, 'complex')
 
     # Run the server's main loop
     server.serve_forever()
