@@ -9,7 +9,7 @@ while x == 0 or y == 0:
     x = int(input("Introduza o primeiro numero "))
     y = int(input("Introduza o segundo numero "))
     if (x == 0 or y == 0):
-        print("Erro nos valores, try again")
+        print("Erro nos valores, tente outra vez")
     else:
         print(s.isdiv(x, y))
         break;
