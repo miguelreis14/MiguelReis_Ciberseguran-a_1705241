@@ -95,19 +95,19 @@ Este código pede dois números ao utilizador e verifica se algum deles é 0 ant
 
 ## Funcionamento do trabalho
 
-![](./imagens/server.png)
+![](./imagens/server.PNG)
 
 Output do server
 
-![](./imagens/1.png)
+![](./imagens/1.PNG)
 
 Verificação de erro no cliente
 
-![](./imagens/3.png)
+![](./imagens/3.PNG)
 
 Output se é divisível
 
-![](./imagens/4.png)
+![](./imagens/4.PNG)
 
 Output se não é divisível
 
