@@ -75,23 +75,28 @@ Este código cria um servidor RPC na qual registo a função “isdiv” que rec
 
 ```
 import xmlrpc.client
+
 # ligacao ao server
 s = xmlrpc.client.ServerProxy('http://localhost:8000')
-
-x=0
-y=0
+# iniciar varieaveis a strings
+x = '0'
+y = '0'
 # Verificacao de valores incorretos e call para o server
-while x == 0 or y == 0:
-   x = int(input("Introduza o primeiro numero "))
-   y = int(input("Introduza o segundo numero "))
-   if (x == 0 or y == 0):
-       print("Erro nos valores, tente outra vez")
-   else:
-       print(s.isdiv(x, y))
-       break;
+# funcao isnumeric
+while x == '0' or y == '0' or x.isnumeric() == False or y.isnumeric() == False:
+    x = (input("Introduza o primeiro numero "))
+    y = (input("Introduza o segundo numero "))
+    
+    if x == '0' or '0' == 0 or x.isnumeric() == False or y.isnumeric() == False:
+        print("Erro nos valores, tente outra vez")
+    else:
+        # importante fazer cast para int
+        print(s.isdiv(int(x), int(y)))
+        break
+
 ```
 
-Este código pede dois números ao utilizador e verifica se algum deles é 0 antes de os enviar ao servidor.
+Este código pede dois números ao utilizador e verifica se algum deles é 0, ou se a variável, nao é numerica antes de os enviar ao servidor como int.
 
 ## Funcionamento do trabalho
 
@@ -101,7 +106,11 @@ Output do server
 
 ![](./imagens/1.PNG)
 
-Verificação de erro no cliente
+Verificação de erro de divisão no cliente
+
+![](./imagens/2.PNG)
+
+Verificação de erro nao numerico no cliente
 
 ![](./imagens/3.PNG)
 
