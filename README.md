@@ -122,8 +122,11 @@ Output se não é divisível
 
 ## Conclusão
 
-// descrever brevemente o que se fez e o que faltou fazer
+O objetivo essencial do trabalho foi cumprido com a implementação da função e da verificação dos erros possíveis no cliente.
+
 
 ## 
 
 ## Bibliografia
+
+https://www.w3schools.com/python/default.asp

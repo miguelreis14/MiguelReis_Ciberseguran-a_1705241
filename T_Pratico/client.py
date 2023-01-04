@@ -10,7 +10,7 @@ y = '0'
 while x == '0' or y == '0' or x.isnumeric() == False or y.isnumeric() == False:
     x = (input("Introduza o primeiro numero "))
     y = (input("Introduza o segundo numero "))
-    
+
     if x == '0' or '0' == 0 or x.isnumeric() == False or y.isnumeric() == False:
         print("Erro nos valores, tente outra vez")
     else:
